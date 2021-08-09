@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Stopwatch</title>
+</head>
+
+<body>
+    <main>
+        <header class="page-title">
+            <h2>Simple Stopwatch</h2>
+        </header>
+
+        <section class="content">
+            <div id="stopwatch">00:00:00</div>
+            <div class="stopwatch-actions">
+                <button type="button" class="btn btn-start" id="toggleStopwatchButton">
+                    Start
+                </button>
+                <button type="button" class="btn btn-restart" id="restartButton">
+                    Restart
+                </button>
+                <button type="button" class="btn btn-pause" id="pauseButton">
+                    Pause
+                </button>
+                <button type="button" class="btn btn-lap" id="lapButton">
+                    Lap
+                </button>
+                <button type="button" class="btn btn-clear-laps" id="clearLapsButton">
+                    Clear laps
+                </button>
+            </div>
+        </section>
+        <section class="laps-list">
+            <header class="laps-title">
+                <h2>Laps</h2>
+            </header>
+            <div id="zeroLaps">
+                <p>No laps here.</p>
+            </div>
+            <div id="laps"></div>
+        </section>
+    </main>
+
+    <script src="./src/stopwatch.js"></script>
+</body>
+
+</html>

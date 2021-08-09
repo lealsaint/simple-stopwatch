@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+    font-size: 1em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #F9F9F9;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.375rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.875rem;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 0.75em 1.25em;
+    font-size: 1.2em;
+    border-radius: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-start {
+    color: whitesmoke;
+    background-color: #108101;
+}
+
+.btn-start:hover,
+.btn-start:focus {
+    color: whitesmoke;
+    background-color: #119100;
+    transition: 0.3s;
+}
+
+.btn-stop {
+    color: whitesmoke;
+    background-color: #581845;
+}
+
+.btn-stop:hover,
+.btn-stop:focus {
+    color: whitesmoke;
+    background-color: #702059;
+    transition: 0.3s;
+}
+
+.btn-restart {
+    color: whitesmoke;
+    background-color: #370397;
+}
+
+.btn-restart:hover,
+.btn-restart:focus {
+    color: whitesmoke;
+    background-color: #39039c;
+    transition: 0.3s;
+}
+
+.btn-pause {
+    color: whitesmoke;
+    background-color: #008BC5;
+}
+
+.btn-pause:hover,
+.btn-pause:focus {
+    color: whitesmoke;
+    background-color: #0599d8;
+    transition: 0.3s;
+}
+
+.btn-lap {
+    color: whitesmoke;
+    background-color: #813401;
+}
+
+.btn-lap:hover,
+.btn-lap:focus {
+    color: whitesmoke;
+    background-color: #913a00;
+    transition: 0.3s;
+}
+
+.btn-clear-laps {
+    color: whitesmoke;
+    background-color: #c75c14;
+}
+
+.btn-clear-laps:hover,
+.btn-clear-laps:focus {
+    color: whitesmoke;
+    background-color: #dd6616;
+    transition: 0.3s;
+}
+
+#stopwatch {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em;
+}
+
+#zeroLaps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    margin: 5px 0;
+}
+
+#clearLaps {
+    border-radius: 5px;
+    background-color: #023146;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.laps-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1em 0;
+}
+
+#laps {
+    margin: 1em;
+}
