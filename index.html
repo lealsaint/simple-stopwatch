@@ -16,21 +16,18 @@
         </header>
 
         <section class="content">
-            <div id="stopwatch">00:00:00</div>
+            <div id="stopwatchTimer">00:00:00</div>
             <div class="stopwatch-actions">
                 <button type="button" class="btn btn-start" id="toggleStopwatchButton">
                     Start
                 </button>
-                <button type="button" class="btn btn-restart" id="restartButton">
+                <button type="button" hidden class="btn btn-restart" id="restartButton">
                     Restart
                 </button>
-                <button type="button" class="btn btn-pause" id="pauseButton">
-                    Pause
-                </button>
-                <button type="button" class="btn btn-lap" id="lapButton">
+                <button type="button" hidden class="btn btn-lap" id="lapButton">
                     Lap
                 </button>
-                <button type="button" class="btn btn-clear-laps" id="clearLapsButton">
+                <button type="button" hidden class="btn btn-clear-laps" id="clearLapsButton">
                     Clear laps
                 </button>
             </div>
@@ -47,6 +44,20 @@
     </main>
 
     <script src="./src/stopwatch.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const myStopwatch = new Stopwatch({
+                stopwatchTimer: document.getElementById('stopwatchTimer'),
+                toggleStopwatchButton: document.getElementById('toggleStopwatchButton'),
+                restartButton: document.getElementById('restartButton'),
+                pauseButton: document.getElementById('pauseButton'),
+                lapButton: document.getElementById('lapButton'),
+                clearLapsButton: document.getElementById('clearLapsButton'),
+                lapsList: document.getElementById('laps'),
+                zeroLaps: document.getElementById('zeroLaps'),
+            });
+        });
+    </script>
 </body>
 
 </html>

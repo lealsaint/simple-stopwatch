@@ -16,6 +16,10 @@ body {
     background-color: #F9F9F9;
 }
 
+main {
+    margin-top: 7%;
+}
+
 h1 {
     font-size: 2.5rem;
 }
@@ -45,14 +49,6 @@ p {
     line-height: 1.8;
 }
 
-main {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .page-title {
     display: flex;
     justify-content: center;
@@ -63,6 +59,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.stopwatch-actions {
+    display: flex;
+}
+
+.stopwatch-actions .btn {
+    margin: 3px;
 }
 
 .btn {
@@ -109,18 +113,6 @@ main {
     transition: 0.3s;
 }
 
-.btn-pause {
-    color: whitesmoke;
-    background-color: #008BC5;
-}
-
-.btn-pause:hover,
-.btn-pause:focus {
-    color: whitesmoke;
-    background-color: #0599d8;
-    transition: 0.3s;
-}
-
 .btn-lap {
     color: whitesmoke;
     background-color: #813401;
@@ -145,7 +137,7 @@ main {
     transition: 0.3s;
 }
 
-#stopwatch {
+#stopwatchTimer {
     font-size: 2em;
     font-weight: bold;
     margin: 1em;
@@ -178,4 +170,10 @@ main {
 
 #laps {
     margin: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .stopwatch-actions {
+        flex-direction: column;
+    }
 }
